@@ -1,0 +1,16 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
+[color-scheme="my-theme"] {
+  --background-color: grey;
+  --text-color: blue;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  text-align: center;
+}

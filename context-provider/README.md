@@ -1,0 +1,1 @@
+You can see an example of using this method on https://ant.design/docs/react/customize-theme

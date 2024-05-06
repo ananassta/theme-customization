@@ -1,0 +1,19 @@
+html {
+    --background-color: white;
+    --text-color: black;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    html {
+      --background-color: black;
+      --text-color: white;
+    }
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  
+    text-align: center;
+  }
+  

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Main page</title>
+  </head>
+  <body>
+    <div>
+      <input type="checkbox" id="my-theme" name="my-theme" />
+      <label for="my-theme">My theme</label>
+    </div>
+    <div>Hello world!</div>
+
+    <script>
+      const myThemeCheckbox = document.querySelector("#my-theme");
+      myThemeCheckbox.addEventListener("click", changeTheme);
+
+      function changeTheme() {
+        if (myThemeCheckbox.checked) {
+          document.firstElementChild.setAttribute("color-scheme", "my-theme");
+        } else {
+          document.firstElementChild.removeAttribute("color-scheme");
+        }
+      }
+    </script>
+  </body>
+</html>
